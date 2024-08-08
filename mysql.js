@@ -1,11 +1,13 @@
 const mysql = require("mysql2/promise"); // Promise 기반 API를 사용
 
 const dbInfo = {
-    host: "svc.sel5.cloudtype.app",  // 데이터베이스 주소
-    port: 30803,         // 데이터베이스 포트
+    host: "secret",  // 데이터베이스 주소
+    port: secret,         // 데이터베이스 포트
     user: "root",       // 로그인 계정
     password: "1234",   // 비밀번호
     database: "PKNU_DATA", // 엑세스할 데이터베이스
+
+    // secret부분은 계정주만 알고있음.
 };
 
 let pool; // 데이터베이스 연결 풀
