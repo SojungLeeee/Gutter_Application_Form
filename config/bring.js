@@ -98,25 +98,33 @@ function displayData(data) {
                 cell.textContent = cellText !== null && cellText !== undefined ? cellText : '';
             }
         });
-  
+        // 각 행 아래에 구분선 추가
+        row.style.borderBottom = '1px solid #ccc'; // 각 행 아래에 얇은 구분선 추가
     });
+
+    
+        // 테이블의 모든 td 요소를 가져오기
+    const colortable = document.getElementById('tableid');
+    const cell = colortable.getElementsByTagName('td');
+    
+    // 각 셀을 검사하여 성별에 따라 색상 변경
+    for (let i = 0; i < cell.length; i++) {
+        if (cell[i].innerText === '남자') {
+            cell[i].style.color = 'blue';  // 남자일 경우 파란색
+        } else if (cell[i].innerText === '여자') {
+            cell[i].style.color = 'red';   // 여자일 경우 빨간색
+        }
+    }
+
 
     dataContainer.appendChild(table);
 
     // 테이블이 있는 컨테이너의 높이 자동 조정
     dataContainer.style.height = `${table.scrollHeight}px`;
+
+
+    
 }
 
 
-// 테이블의 모든 td 요소를 가져오기
-const colortable = document.getElementById('tableid');
-const cell = colortable.getElementsByTagName('td');
 
-// 각 셀을 검사하여 성별에 따라 색상 변경
-for (let i = 0; i < cell.length; i++) {
-    if (cell[i].innerText === '남자') {
-        cell[i].style.color = 'blue';  // 남자일 경우 파란색
-    } else if (cell[i].innerText === '여자') {
-        cell[i].style.color = 'red';   // 여자일 경우 빨간색
-    }
-}
