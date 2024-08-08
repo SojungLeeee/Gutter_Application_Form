@@ -200,9 +200,9 @@ function displayData(data) {
     
 //     // 각 셀을 검사하여 성별에 따라 색상 변경
 //     for (let i = 0; i < cell.length; i++) {
-//         if (cell[i].innerText === '남자') {
+//         if (cell[i].innerText === '남자 ') {
 //             cell[i].style.color = 'blue';  // 남자일 경우 파란색
-//         } else if (cell[i].innerText === '여자') {
+//         } else if (cell[i].innerText === '여자 ') {
 //             cell[i].style.color = 'red';   // 여자일 경우 빨간색
 //         }
 //     }
