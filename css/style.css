@@ -327,6 +327,10 @@ a:focus {
   position: unset;
 }
 
+.slider_section .col-md-6 {
+  margin-bottom:20px;
+}
+
 .slider_section .play_btn {
   display: -webkit-box;
   display: -ms-flexbox;
