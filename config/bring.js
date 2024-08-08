@@ -117,21 +117,22 @@ function displayData(data) {
 
     dataContainer.appendChild(table);
 
-    const colortable = document.querySelectorAll('td');
-    for (let i = 0; i < colortable.length; i++){
-        if (colortable[i].textContent==="여자 "){
-                colortable[i].style.color="red";
-        }
-        if (colortable[i].textContent==="남자 "){
-            colortable[i].style.color="blue";
-        }
-    }
-    
+
 
     
 
     // 테이블이 있는 컨테이너의 높이 자동 조정
     dataContainer.style.height = `${table.scrollHeight}px`;
+}
+
+const colortable = document.querySelectorAll('td');
+for (let i = 0; i < colortable.length; i++){
+    if (colortable[i].textContent==="여자 "){
+            colortable[i].style.color="red";
+    }
+    if (colortable[i].textContent==="남자 "){
+        colortable[i].style.color="blue";
+    }
 }
 
 
