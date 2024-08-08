@@ -35,14 +35,29 @@ function adjustHeight() {
 
 
 
+// function formatDateTime(dateString) {
+//     const date = new Date(dateString);
+//     const year = date.getFullYear();
+//     const month = String(date.getMonth() + 1).padStart(2, '0');
+//     const day = String(date.getDate()).padStart(2, '0');
+//     const hours = String(date.getHours()+1).padStart(2, '0');
+//     const minutes = String(date.getMinutes()).padStart(2, '0');
+//     const seconds = String(date.getSeconds()).padStart(2, '0');
+//     return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+// }
 function formatDateTime(dateString) {
     const date = new Date(dateString);
-    const year = date.getFullYear();
-    const month = String(date.getMonth() + 1).padStart(2, '0');
-    const day = String(date.getDate()).padStart(2, '0');
-    const hours = String(date.getHours()+1).padStart(2, '0');
-    const minutes = String(date.getMinutes()).padStart(2, '0');
-    const seconds = String(date.getSeconds()).padStart(2, '0');
+
+    // 서버의 시간이 UTC 시간으로 되어 있는 경우 UTC 시간대를 로컬 시간대로 변환
+    const year = date.getUTCFullYear();
+    const month = String(date.getUTCMonth() + 1).padStart(2, '0');
+    const day = String(date.getUTCDate()).padStart(2, '0');
+
+    // 시간을 로컬 시간으로 변환
+    const hours = String(date.getUTCHours() + 9).padStart(2, '0'); // 9시간을 더해 KST (한국 표준시)로 변환
+    const minutes = String(date.getUTCMinutes()).padStart(2, '0');
+    const seconds = String(date.getUTCSeconds()).padStart(2, '0');
+
     return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
 }
 
@@ -105,10 +120,10 @@ function displayData(data) {
     const colortable = document.querySelector('td');
     for (let i = 0; i < colortable.length; i++){
         if (colortable[i].textContent=="여자"){
-                colortable.style.color="red";
+                colortable[i].style.color="red";
         }
         if (colortable[i].textContent=="남자"){
-            colortable.style.color="blue";
+            colortable[i].style.color="blue";
         }
     }
     
