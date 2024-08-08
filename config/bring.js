@@ -77,7 +77,7 @@ function displayData(data) {
     headerRow.style.borderBottom = '2px solid #000'; // 헤더 밑에 두꺼운 구분선 추가
     table.appendChild(headerRow);
 
-    // 테이블 행에 데이터 삽입
+     // 테이블 행에 데이터 삽입
     data.forEach((item, index) => {
         const row = table.insertRow();
         const cellValues = Object.values(item); // 객체의 값들만 추출
@@ -93,13 +93,15 @@ function displayData(data) {
                 cell.textContent = formatDateTime(cellText);
             } else {
                 cell.textContent = cellText !== null && cellText !== undefined ? cellText : '';
-            }
-            
-            // 성별에 따라 색상 변경
-            if (cellText === '남자') {
-                cell.style.color = 'blue';  // 남자일 경우 파란색
-            } else if (cellText === '여자') {
-                cell.style.color = 'red';   // 여자일 경우 빨간색
+
+                // 성별에 따라 색상 변경
+                if (i === 2) { // 성별이 있는 셀이 세 번째 열에 있다고 가정
+                    if (cellText === '남자') {
+                        cell.style.color = 'blue';  // 남자일 경우 파란색
+                    } else if (cellText === '여자') {
+                        cell.style.color = 'red';   // 여자일 경우 빨간색
+                    }
+                }
             }
         });
 
