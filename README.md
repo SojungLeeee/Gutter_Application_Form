@@ -10,7 +10,7 @@
 [주요 폼 부분] -> DB로 넘어갈 정보들이 입력되는 부분
 
 
-배포는 cloudtype을 이용해 mariaDB의 sql까지 함께 사용
-** cloudtype을 이용할 때 mysql.js 부분의 host와 post를 cloudtype에서 지정해준 host와 post로 바꿔줘야 정상적으로 DB와 연결됨
+배포는 cloudtype을 이용해 mariaDB의 sql까지 함께 사용함
+※ cloudtype을 이용할 때 mysql.js 부분의 host와 post를 cloudtype에서 지정해준 host와 post로 바꿔줘야 정상적으로 DB와 연결됨
 
 ![image](https://github.com/user-attachments/assets/a418225b-3c3a-4e2a-ac14-cc28f0f883be)
