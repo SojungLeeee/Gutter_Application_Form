@@ -93,15 +93,6 @@ function displayData(data) {
                 cell.textContent = formatDateTime(cellText);
             } else {
                 cell.textContent = cellText !== null && cellText !== undefined ? cellText : '';
-
-                // 성별에 따라 색상 변경
-                if (i === 2) { // 성별이 있는 셀이 세 번째 열에 있다고 가정
-                    if (cell.textContent === '남자') {
-                        cell.style.color = 'blue';  // 남자일 경우 파란색
-                    } else if (cell.textContent === '여자') {
-                        cell.style.color = 'red';   // 여자일 경우 빨간색
-                    }
-                }
             }
         });
 
@@ -111,9 +102,25 @@ function displayData(data) {
 
     dataContainer.appendChild(table);
 
+    const colortable = document.querySelector('td');
+    for (let i = 0; i < colortable.length; i++){
+        if (colortable[i].textContent=="여자"){
+                colortable.style.color="red";
+        }
+        if (colortable[i].textContent=="남자"){
+            colortable.style.color="blue";
+        }
+    }
+    
+
+    
+
     // 테이블이 있는 컨테이너의 높이 자동 조정
     dataContainer.style.height = `${table.scrollHeight}px`;
 }
+
+
+
 
 // function displayData(data) {
 //     const dataContainer = document.getElementById('dataContainer');
