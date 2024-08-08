@@ -62,6 +62,7 @@ function displayData(data) {
     table.id = "tableid";
 
     // 테이블 헤더 생성
+    const headerRow = document.createElement('tr');
     table.innerHTML = `
         <tr>
             <th>수</th>
@@ -74,7 +75,10 @@ function displayData(data) {
             <th>제출일시</th>
         </tr>
     `;
+    headerRow.style.borderBottom = '2px solid #000'; // 헤더 밑에 두꺼운 구분선 추가
+    table.appendChild(headerRow);
 
+    
 
     // 테이블 행에 데이터 삽입
     data.forEach((item, index) => {
