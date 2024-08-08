@@ -119,10 +119,10 @@ function displayData(data) {
 
     const colortable = document.querySelectorAll('td');
     for (let i = 0; i < colortable.length; i++){
-        if (colortable[i].textContent=="여자"){
+        if (colortable[i].textContent==="여자"){
                 colortable[i].style.color="red";
         }
-        if (colortable[i].textContent=="남자"){
+        if (colortable[i].textContent==="남자"){
             colortable[i].style.color="blue";
         }
     }
