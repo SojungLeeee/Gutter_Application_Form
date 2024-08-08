@@ -117,6 +117,16 @@ function displayData(data) {
 
     dataContainer.appendChild(table);
 
+        // 성별에 따라 텍스트 색상 변경
+    const cells = table.querySelectorAll('td'); // 테이블 내의 모든 td 요소 선택
+    cells.forEach(cell => {
+        if (cell.textContent === '여자 ') {
+            cell.style.color = 'red';
+        } else if (cell.textContent === '남자 ') {
+            cell.style.color = 'blue';
+        }
+    });
+
 
 
     
@@ -125,15 +135,15 @@ function displayData(data) {
     dataContainer.style.height = `${table.scrollHeight}px`;
 }
 
-const colortable = document.querySelectorAll('td');
-for (let i = 0; i < colortable.length; i++){
-    if (colortable[i].textContent==="여자 "){
-            colortable[i].style.color="red";
-    }
-    if (colortable[i].textContent==="남자 "){
-        colortable[i].style.color="blue";
-    }
-}
+// const colortable = document.querySelectorAll('td');
+// for (let i = 0; i < colortable.length; i++){
+//     if (colortable[i].textContent==="여자 "){
+//             colortable[i].style.color="red";
+//     }
+//     if (colortable[i].textContent==="남자 "){
+//         colortable[i].style.color="blue";
+//     }
+// }
 
 
 
