@@ -102,3 +102,17 @@ function displayData(data) {
     // 테이블이 있는 컨테이너의 높이 자동 조정
     dataContainer.style.height = `${table.scrollHeight}px`;
 }
+
+
+// 테이블의 모든 td 요소를 가져오기
+const table = document.getElementById('tableid');
+const cells = table.getElementsByTagName('td');
+
+// 각 셀을 검사하여 성별에 따라 색상 변경
+for (let i = 0; i < cells.length; i++) {
+    if (cells[i].innerText === '남자') {
+        cells[i].style.color = 'blue';  // 남자일 경우 파란색
+    } else if (cells[i].innerText === '여자') {
+        cells[i].style.color = 'red';   // 여자일 경우 빨간색
+    }
+}
