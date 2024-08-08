@@ -96,9 +96,9 @@ function displayData(data) {
 
                 // 성별에 따라 색상 변경
                 if (i === 2) { // 성별이 있는 셀이 세 번째 열에 있다고 가정
-                    if (cellText === '남자') {
+                    if (cell.textContent === '남자') {
                         cell.style.color = 'blue';  // 남자일 경우 파란색
-                    } else if (cellText === '여자') {
+                    } else if (cell.textContent === '여자') {
                         cell.style.color = 'red';   // 여자일 경우 빨간색
                     }
                 }
