@@ -56,7 +56,7 @@ function formatDateTime(dateString) {
     const day = String(date.getUTCDate()).padStart(2, '0');
 
     // 시간을 로컬 시간으로 변환
-    const hours = String(date.getUTCHours()+9).padStart(2, '0'); // 9시간을 더해 KST (한국 표준시)로 변환
+    const hours = String(date.getUTCHours()).padStart(2, '0'); // 9시간을 더해 KST (한국 표준시)로 변환
     const minutes = String(date.getUTCMinutes()).padStart(2, '0');
     const seconds = String(date.getUTCSeconds()).padStart(2, '0');
 
