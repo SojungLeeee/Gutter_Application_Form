@@ -14,3 +14,10 @@
 ※ cloudtype을 이용할 때 mysql.js 부분의 host와 post를 cloudtype에서 지정해준 host와 post로 바꿔줘야 정상적으로 DB와 연결됨
 
 ![image](https://github.com/user-attachments/assets/a418225b-3c3a-4e2a-ac14-cc28f0f883be)
+
+CHECK_REGISTER(ONLY MANAGER) 클릭 시
+![image](https://github.com/user-attachments/assets/503d19b5-7263-4e78-b2d9-518a596f8de8)
+해당 창이 뜨며 지정해준 비밀번호를 입력했을 때에만 해당 html로 넘어가도록 설정
+
+![image](https://github.com/user-attachments/assets/5bce5aa0-3ce8-45a0-98e6-a96a71fb8aa1)
+정보 조회시 sql에서 정보를 가져온 후 띄워주기
