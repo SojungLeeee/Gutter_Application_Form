@@ -1,7 +1,7 @@
 ## 간단한 동아리 신청서 제출 폼을 DB와 연동시키기
 * * *
 
-<h5>📚 STACKS</h5>
+<div align=center><h3>📚 STACKS</h3></div>
 <div align=center> 
    <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
    <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white">
