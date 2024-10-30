@@ -12,6 +12,7 @@
    <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
 </div>
 
+* * *
 
 1. free-html 양식에서 적당한 html을 가져와 내용을 변경시키기 -> 동아리 바탕으로
 2. 신입생 (재학생도 가능) 대상으로 부원을 받을 때 입력해야 할 기본적인 정보들을 신청서 폼 작성란에 넣기
