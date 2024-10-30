@@ -1,6 +1,16 @@
 ## 간단한 동아리 신청서 제출 폼을 DB와 연동시키기
 * * *
 
+<h1>📚 STACKS</h1>
+
+<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+<img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+<img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+<img src="https://img.shields.io/badge/mariaDB-003545?style=for-the-badge&logo=mariaDB&logoColor=white">
+<img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white">
+<img src="https://img.shields.io/badge/express-000000?style=for-the-badge&logo=express&logoColor=white">
+<img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
+
 
 1. free-html 양식에서 적당한 html을 가져와 내용을 변경시키기 -> 동아리 바탕으로
 2. 신입생 (재학생도 가능) 대상으로 부원을 받을 때 입력해야 할 기본적인 정보들을 신청서 폼 작성란에 넣기
