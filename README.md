@@ -1,4 +1,5 @@
-## 간단한 동아리 신청서 제출 폼을 DB와 연동시키기
+## GUTTER 동아리 폼이 포함된 웹
+## SQL 및 DB 연동
 * * *
 
 <div align=center><h3>📚 STACKS</h3></div>
