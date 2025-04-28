@@ -1,4 +1,4 @@
-## GUTTER 동아리 신청을 폼으로 받고 DB와 연동시켜 보이는 웹!!
+## GUTTER 동아리 신청을 폼으로 받고 DB와 연동시켜 보이는 웹!
 * * *
 
 <div align=center><h3>📚 STACKS</h3></div>
