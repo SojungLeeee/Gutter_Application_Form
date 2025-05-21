@@ -1,4 +1,10 @@
-# 📖 Gutter : 새로운 동아리원을 위한 간편 신청 플랫폼
+# 📖 GUTTER : 새로운 동아리원을 위한 간편 신청 플랫폼
+<br>
+
+![image](https://github.com/user-attachments/assets/f5ff7c8c-eb2d-49a9-8021-a9726e262db3)
+
+![image](https://github.com/user-attachments/assets/59a1442b-97eb-4dc3-b77e-2ca747e1b706)
+
 <br>
 
 ## ✍🏻 프로젝트 소개
@@ -33,6 +39,12 @@
    * 지정된 암호를 입력 시 지금까지 신청된 현황을 확인할 수 있도록 했습니다.
 
 <br>
+
+## 🔗 배포 링크  
+[GUTTER 신청 플랫폼 바로가기](https://port-0-gutter-example-executive-lzskhypma6e0db96.sel4.cloudtype.app/index.html)
+
+<br>
+
 
 ## 👥 팀원 구성 : 개인 프로젝트
 | 이름 | 역할 | GitHub | 이메일 |
@@ -84,29 +96,98 @@ Gutter_Application_Form/
 
 ```
 
+## 🖥️ 메인 화면
 
-1. free-html 양식에서 적당한 html을 가져와 내용을 변경시키기 -> 동아리 바탕으로
-2. 신입생 (재학생도 가능) 대상으로 부원을 받을 때 입력해야 할 기본적인 정보들을 신청서 폼 작성란에 넣기
-3. 작성된 정보들을 DB로 넘겨주기
-4. 작성된 정보들을 확인하기 위해 DB에서 저장된 데이터들을 가져오기
+**1. 메인 동아리 소개 화면**
 
-   
+<br>
 
+![image](https://github.com/user-attachments/assets/a3d1fc93-9c03-471d-bdfd-fa994596ec14)
+![image](https://github.com/user-attachments/assets/dd1092f6-d9c8-48f6-8510-2424ed3e41c5)
+![image](https://github.com/user-attachments/assets/648c370c-83c9-4423-b608-0e42ab72a26c)
+
+
+
+
+**2. 동아리 신청 폼 작성 화면** 
+
+<br>
+ 
 ![image](https://github.com/user-attachments/assets/f40dafa5-1c43-4700-a185-80f31a213adc)
+* 해당 입력 정보들이 DB 로 넘어가서 신청 현황을 확인할 수 있습니다.
+* DB 에는 이름, 성별, 학번, 휴대폰 번호, 나이, 전공(학과), 작성 시간이 저장됩니다.
 
-[주요 폼 부분] -> DB로 넘어갈 정보들이 입력되는 부분
+  <br>
+  <br>
+  <br>
 
+**3. 임원단 소개 화면**
 
-배포는 cloudtype을 이용해 mariaDB의 sql까지 함께 사용함
-* cloudtype을 이용할 때 mysql.js 부분의 host와 post를 cloudtype에서 지정해준 host와 post로 바꿔줘야 정상적으로 DB와 연결됨
+<br>
 
-![image](https://github.com/user-attachments/assets/a418225b-3c3a-4e2a-ac14-cc28f0f883be)
+![image](https://github.com/user-attachments/assets/86a758dd-141b-4f43-bebf-c5fcbbe74003)
+* 2024년 2학기 GUTTER 동아리의 임원단 정보를 확인할 수 있습니다.
+* 인스타그램을 누르면 해당 임원단의 인스타그램으로 이동합니다.
 
-CHECK_REGISTER(ONLY MANAGER) 클릭 시
+  <br>
+  <br>
+  <br>
 
+**4. 기존 부원의 후기 화면**
+
+<br>
+
+![image](https://github.com/user-attachments/assets/e21bfb50-0d39-4e68-8f08-f96fee227c6c)
+* 직접 기존 부원들의 후기를 받아 작성된 화면입니다.
+* 후기 아래 footer 에는 링크가 설정되어 있습니다.
+
+<br>
+<br>
+<br>
+
+**5. 동아리 신청 현황 확인 화면**
+
+<br>
+
+![image](https://github.com/user-attachments/assets/5e9e03fa-1a1c-470d-ada1-3d4a1649eaf4)
 ![image](https://github.com/user-attachments/assets/503d19b5-7263-4e78-b2d9-518a596f8de8)
+* 웹 페이지 상단에서 CHECK_REGISTER (ONLY_MANAGER) 부분을 클릭합니다.
+* 클릭 후 나타나는 alert 창에서 관리자만 아는 비밀번호를 입력합니다.
 
-해당 창이 뜨며 지정해준 비밀번호를 입력했을 때에만 해당 html로 넘어가도록 설정
+<br>
 
 ![image](https://github.com/user-attachments/assets/5bce5aa0-3ce8-45a0-98e6-a96a71fb8aa1)
-정보 조회시 sql에서 정보를 가져온 후 띄워주기
+* 비밀번호가 일치하면 SQL 에서 저장된 정보를 가져와 신청 현황을 확인할 수 있습니다.
+
+<br>
+<br>
+
+<hr>
+<br>
+<br>
+
+## 💡 배포 방식
+* 학부 수업에서는 Netlify를 이용한 정적 웹사이트 배포만 실습해 보았습니다.
+* 하지만 Netlify는 정적 파일 위주의 호스팅 서비스이기 때문에, 데이터베이스 연동과 같은 동적 기능을 지원하지 않아 한계가 있었습니다.
+* 이러한 이유로 동적 서버 사이드 로직과 DB 연동이 가능한 Cloudtype을 사용해 배포를 진행하였습니다.
+* 프리티어 방식 (1일 1중단) 으로 진행했고 실제 신청을 받는 기간동안 유료 버전을 사용하여 배포가 끊기지 않도록 했습니다.
+
+![image](https://github.com/user-attachments/assets/a418225b-3c3a-4e2a-ac14-cc28f0f883be)
+### 주의점
+* Cloudtype 을 사용할 때 **mysql.js 부분의 host와 post**를 Cloudtype에서 지정해준 host와 post로 바꿔줘야 정상적으로 DB와 연결됩니다.
+
+<br>
+
+## ✍🏻 프로젝트 후기
+* 학부에서 배운 내용을 바탕으로 동아리 신청 폼을 직접 구현하고 실제로 이 페이지를 활용해 신입생을 모집하면서 실질적인 경험을 쌓을 수 있었습니다.
+* 또한 Netlify 뿐만 아니라 Cloudtype 을 활용한 배포까지 경험해보며, 정적·동적 웹 서비스의 차이를 직접 체감할 수 있는 좋은 기회가 되었습니다.
+
+<br>
+<br>
+
+![image](https://github.com/user-attachments/assets/bcedb967-1867-41e2-8106-b4438e5e4286) 
+
+<br>
+
+* 실제로 에브리타임에서 동아리 모집 기간동안 이 웹사이트를 활용하여 지원을 받았습니다.
+
