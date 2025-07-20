@@ -1,4 +1,4 @@
-#  🎳 GUTTER : 새로운 동아리원을 위한 간편 신청 플랫폼
+# 🎳🎳 GUTTER : 새로운 동아리원을 위한 간편 신청 플랫폼
 <br>
 
 ![image](https://github.com/user-attachments/assets/f5ff7c8c-eb2d-49a9-8021-a9726e262db3)
